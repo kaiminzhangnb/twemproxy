@@ -7,7 +7,7 @@ endif
 AM_CPPFLAGS += -I $(top_srcdir)/src/hashkit
 AM_CPPFLAGS += -I $(top_srcdir)/src/proto
 AM_CPPFLAGS += -I $(top_srcdir)/src/event
-AM_CPPFLAGS += -I $(top_srcdir)/contrib/yaml-0.1.4/include
+AM_CPPFLAGS += -I $(top_srcdir)/contrib/yaml-0.2.5/include
 
 AM_CFLAGS =
 AM_CFLAGS += -Wall -Wshadow
@@ -52,4 +52,4 @@ nutcracker_SOURCES =			\
 nutcracker_LDADD = $(top_builddir)/src/hashkit/libhashkit.a
 nutcracker_LDADD += $(top_builddir)/src/proto/libproto.a
 nutcracker_LDADD += $(top_builddir)/src/event/libevent.a
-nutcracker_LDADD += $(top_builddir)/contrib/yaml-0.1.4/src/.libs/libyaml.a
+nutcracker_LDADD += $(top_builddir)/contrib/yaml-0.2.5/src/.libs/libyaml.a
